@@ -3,8 +3,9 @@ import java.util.Random;
 public class juego {
     public static void main(String[] args) {
         String[] opciones = new String[]{"Piedra", "Papel", "Tijeras"};
-        String jugador1 = opciones[new Random().nextInt(opciones.length)];
-        String jugador2 = opciones[new Random().nextInt(opciones.length)];
+        Random random = new Random();
+        String jugador1 = opciones[random.nextInt(opciones.length)];
+        String jugador2 = opciones[random.nextInt(opciones.length)];
 
         System.out.println("Jugador 1: " + jugador1);
         System.out.println("Jugador 2: " + jugador2);
