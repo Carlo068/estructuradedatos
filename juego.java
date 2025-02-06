@@ -5,8 +5,8 @@
 
 import java.util.Random;
 
-public class juego {
-    public static void main(String[] args) {
+public class Juego {
+    public void main(String[] args) {
         // Se crea un arreglo tipo string que guarde las opciones de juego
         String[] opciones = new String[]{"Piedra", "Papel", "Tijeras"};
         // Se crea la variable random que guarde la funcion Random

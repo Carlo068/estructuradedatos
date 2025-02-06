@@ -3,8 +3,8 @@
 * fecha 04/02/2025
 */
 
-public class promedio {
-    public static void main(String[] args) {
+public class Promedio {
+    public void main(String[] args) {
         // Se crea un arreglo double para guardar las calificaciones
         double[] calificaciones = new double[]{10, 9, 8};
         double sum = 0;
