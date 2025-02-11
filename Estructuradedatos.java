@@ -25,5 +25,19 @@ public class Estructuradedatos {
         String fullName = userData.fullNameString("Carlo", "Ruiz");
         // se imprime el resultado de la funcion fullNameString
         System.out.println(fullName);
+
+        StudentGrades student = new StudentGrades();
+        
+        // Calcular la calificación del parcial
+        int partialGrade = student.calculatePartialGrade(85, 90);
+        System.out.println("Calificación del parcial: " + partialGrade);
+        
+        // Calcular la calificación final del semestre
+        int finalGrade = student.calculateFinalGrade(80, 75, 90, 85);
+        System.out.println("Calificación final del semestre: " + finalGrade);
+        
+        // Verificar el estatus de asistencia
+        String attendanceStatus = student.checkFailureByAbcenses(64, 7);
+        System.out.println(attendanceStatus);
     }
 }
