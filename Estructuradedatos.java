@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /** Carlo Alejandro Ruiz OLvera
 * 14961
 * fecha 04/02/2025
@@ -39,5 +41,24 @@ public class Estructuradedatos {
         // Verificar el estatus de asistencia
         String attendanceStatus = student.checkFailureByAbcenses(64, 7);
         System.out.println(attendanceStatus);
+
+        // Calcular el área de un triángulo
+        // Se crea un objeto de la clase Scanner para leer la entrada del usuario
+        Scanner objScanner = new Scanner(System.in);
+
+        // Se pide al usuario que ingrese la base y la altura del triángulo
+        System.out.print("Ingresa la base del triángulo: ");
+        double base = objScanner.nextDouble();
+
+        // Se pide al usuario que ingrese la altura del triángulo
+        System.out.print("Ingresa la altura del triángulo: ");
+        double height = objScanner.nextDouble();
+
+        // Se crea un objeto de la clase TriangleArea
+        TriangleArea objTriangle = new TriangleArea();
+        double area = objTriangle.calculateArea(base, height);
+
+        // Se imprime el resultado
+        System.out.println("El área del triángulo de base " + base + " y altura " + height + " es: " + area);
     }
 }
