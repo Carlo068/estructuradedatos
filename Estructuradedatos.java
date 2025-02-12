@@ -60,5 +60,8 @@ public class Estructuradedatos {
 
         // Se imprime el resultado
         System.out.println("El área del triángulo de base " + base + " y altura " + height + " es: " + area);
+
+        // Se cierra el objeto de la clase Scanner
+        objScanner.close();
     }
 }
