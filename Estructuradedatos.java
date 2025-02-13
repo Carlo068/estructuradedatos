@@ -61,7 +61,22 @@ public class Estructuradedatos {
         // Se imprime el resultado
         System.out.println("El área del triángulo de base " + base + " y altura " + height + " es: " + area);
 
+        // Calcular el área de un círculo
+        // Se pide al usuario que ingrese el radio del círculo
+        System.out.print("Ingresa el radio del círculo: ");
+        double radius = objScanner.nextDouble();
+
+        // Se crea un objeto de la clase CircleArea
+        CircleArea objCircle = new CircleArea();
+        double area2 = objCircle.calculateArea(radius);
+
+        // Se imprime el resultado
+        System.out.println("El área del círculo de radio " + radius + " es: " + area2);
+
         // Se cierra el objeto de la clase Scanner
         objScanner.close();
+        
+        
+        
     }
 }
