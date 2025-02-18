@@ -76,7 +76,19 @@ public class Estructuradedatos {
         // Se cierra el objeto de la clase Scanner
         objScanner.close();
         
-        
+        // Se crea un objeto de la clase ArrayListExample
+        ArrayListExample objArrayList = new ArrayListExample();
+        objArrayList.addCars("Toyota");
+        objArrayList.addCars("Ford");
+        objArrayList.addCars("Chevrolet");
+
+        objArrayList.removeCars(1);
+
+        // Se crea un objeto de la clase MultiDimensionalArray
+        MultiDimensionalArray objMultiDimensionalArray = new MultiDimensionalArray();
+        objMultiDimensionalArray.printbidimensionalArray();
+
+
         
     }
 }
