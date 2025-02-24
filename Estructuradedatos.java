@@ -111,5 +111,12 @@ public class Estructuradedatos {
             18, 21, 24, 27, 30, 33, 36, 39, 42, 45
         };
         objEvenOrOdd.evenorodd(numeros);
+
+
+        // Se crea un objeto de la clase SalesWithDiscount
+        SalesWithDiscount objSalesWithDiscount = new SalesWithDiscount();
+        double[] sales = {100.0, 200.0, 150.0};
+        double total = objSalesWithDiscount.totalWithDiscount(sales);
+        System.out.println("La sumatotal de ventas con el 10% de descuento es: " + total);
     }
 }
