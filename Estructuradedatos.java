@@ -73,6 +73,19 @@ public class Estructuradedatos {
         // Se imprime el resultado
         System.out.println("El área del círculo de radio " + radius + " es: " + area2);
 
+        // Calcular calificacion parcial
+        // Se pide al usuario que ingrese la calificación del parcial
+        System.out.print("Ingresa la calificación del parcial: ");
+        int partialGrade2 = objScanner.nextInt();
+
+        System.out.print("Ingresa la calificación de las tareas: ");
+        int homeworkScore = objScanner.nextInt();
+
+        GradeCalculationPartial objGradeCalculationPartial = new GradeCalculationPartial();
+        double finalGrade2 = objGradeCalculationPartial.calculate(partialGrade2, homeworkScore);
+
+        System.out.println("La calificación final es: " + finalGrade2);
+
         // Se cierra el objeto de la clase Scanner
         objScanner.close();
         
@@ -98,8 +111,5 @@ public class Estructuradedatos {
             18, 21, 24, 27, 30, 33, 36, 39, 42, 45
         };
         objEvenOrOdd.evenorodd(numeros);
-
-
-        
     }
 }
