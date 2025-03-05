@@ -8,10 +8,10 @@ public class InsertionSortExample {
             int j = i - 1;
             while (j >= 0 && numbers[j] > key) {
                 numbers[j + 1] = numbers[j];
+                numbers[j] = key;
                 j = j - 1;
                 c++;
             }
-            numbers[j + 1] = key;
         }
         System.out.println("Comparaciones: " + c);
         return numbers;
