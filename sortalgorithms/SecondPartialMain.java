@@ -9,11 +9,16 @@ public class SecondPartialMain {
             System.out.print(array[i] + " ");
         }
 
-        int[] numbers2 = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         SelectionSortExample selection = new SelectionSortExample();
-        int [] array2 = selection.sort(numbers2);
+        int [] array2 = selection.sort(numbers);
         for (int i = 0; i < array2.length; i++) {
             System.out.print(array2[i] + " ");
+        }
+
+        BubbleSortExample bubble = new BubbleSortExample();
+        int [] array3 = bubble.sort(numbers);
+        for (int i = 0; i < array3.length; i++) {
+            System.out.print(array3[i] + " ");
         }
     }
 }
