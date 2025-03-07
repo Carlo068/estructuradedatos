@@ -23,6 +23,9 @@ public class InsertionSortExample {
                 c++;
             }
         }
+        if (c == 0) {
+            c = numbers.length - 1;
+        }
         System.out.println("Comparaciones: " + c);
         return numbers;
     }
