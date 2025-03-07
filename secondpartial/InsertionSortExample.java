@@ -31,6 +31,7 @@ public class InsertionSortExample {
                 c++;
             }
         }
+        // el Big O de insertion sort es O(n^2) en el peor de los casos, pero si el arreglo ya esta ordenado es O(n - 1)
         System.out.println("Comparaciones: " + c);
         return numbers;
     }
