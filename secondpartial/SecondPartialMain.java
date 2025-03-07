@@ -3,7 +3,7 @@
 * fecha 03/03/2025
 */
 
-package sortalgorithms;
+package secondpartial;
 
 public class SecondPartialMain {
     public static void main(String[] args) {

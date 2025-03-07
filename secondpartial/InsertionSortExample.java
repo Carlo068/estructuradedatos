@@ -3,7 +3,7 @@
 * fecha 06/03/2025
 */
 
-package sortalgorithms;
+package secondpartial;
 
 public class InsertionSortExample {
     public int[] sort(int[] numbers) {
