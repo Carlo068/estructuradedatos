@@ -14,17 +14,19 @@ public class InsertionSortExample {
             // se guarda el número actual en una variable key
             int key = numbers[i];
             int j = i - 1;
+            if (j >= 0 && numbers[j] > key){
             // se crea otro ciclo para comparar los números y ordenarlos
-            while (j >= 0 && numbers[j] > key) {
-                // si el número actual es mayor al número siguiente se intercambian
-                numbers[j + 1] = numbers[j];
-                numbers[j] = key;
-                j = j - 1;
+                while (j >= 0 && numbers[j] > key) {
+                    // si el número actual es mayor al número siguiente se intercambian
+                    numbers[j + 1] = numbers[j];
+                    numbers[j] = key;
+                    j = j - 1;
+                    c++;
+                }
+            }
+            else {
                 c++;
             }
-        }
-        if (c == 0) {
-            c = numbers.length - 1;
         }
         System.out.println("Comparaciones: " + c);
         return numbers;
