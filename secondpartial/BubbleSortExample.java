@@ -4,6 +4,8 @@
 */
 package secondpartial;
 
+// Bubble sort es un algoritmo que compara los elementos adyacentes y los intercambia si están en el orden incorrecto
+// este proceso se repite hasta que no se necesiten más intercambios
 public class BubbleSortExample {
     public int[] sort(int[] numbers) {
         // se crea una variable para contar las comparaciones
@@ -22,6 +24,7 @@ public class BubbleSortExample {
                 c++;
             }
         }
+        // el Big O de bubble sort es O(n^2) porque se recorre un for anidado siempre sin importar si el arreglo ya esta ordenado
         System.out.println("\nComparaciones: " + c);
         return numbers;
     }

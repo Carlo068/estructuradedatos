@@ -4,6 +4,9 @@
 */
 package secondpartial;
 
+// Selection sort es un algoritmo que compara encontrando el minimo valor en la parte no ordenada del arreglo
+// y lo intercambia con el primer valor de la parte no ordenada asi de manera ciclica hasta que ya no queden 
+// valores no ordenados
 public class SelectionSortExample {
     public int[] sort(int[] numbers) {
         // se crea una variable para contar las comparaciones
@@ -23,6 +26,7 @@ public class SelectionSortExample {
             numbers[minIndex] = numbers[i];
             numbers[i] = temp;
         }
+        // el Big O de selection sort es O(n^2) porque se recorre un for anidado siempre sin importar si el arreglo ya esta ordenado
         System.out.println("\nComparaciones: " + c);
         return numbers;
     }
