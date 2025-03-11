@@ -12,6 +12,8 @@ public class BubbleSortExample {
         int c = 0;
         // se recorre el arreglo de números
         for (int i = 0; i < numbers.length - 1; ++i) {
+            // se crea una variable para saber si se hicieron cambios
+            boolean change = false;
             // se crea otro ciclo para comparar los números
             for (int j = 0; j < numbers.length - i - 1; ++j) {
                 // si el número actual es mayor al siguiente número se intercambian
@@ -19,12 +21,18 @@ public class BubbleSortExample {
                     int temp = numbers[j];
                     numbers[j] = numbers[j + 1];
                     numbers[j + 1] = temp;
+                    // se actualiza la variable de cambios
+                    change = true;
                 }
                 // se incrementa el contador de comparaciones
                 c++;
             }
+            // si no se hicieron cambios se sale del ciclo
+            if (!change) {
+                break;
+            }
         }
-        // el Big O de bubble sort es O(n^2) porque se recorre un for anidado siempre sin importar si el arreglo ya esta ordenado
+        // el Big O de bubble sort es O(n^2) en el peor de los casos, pero si el arreglo ya esta ordenado es O(n)
         System.out.println("\nComparaciones: " + c);
         return numbers;
     }

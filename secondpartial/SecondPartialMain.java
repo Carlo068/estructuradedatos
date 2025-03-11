@@ -8,8 +8,11 @@ package secondpartial;
 public class SecondPartialMain {
     public static void main(String[] args) {
         // se crean los arreglos de números
-        int[] numbers = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        int[] numbers2 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] numbers = new int[]{5, 4, 3, 2, 1};
+        int[] numbers2 = new int[]{1, 2, 3, 4, 5};
+        // No se porque buguea por eso cree otra lista igual
+        int[] numbers3 = new int[]{1, 2, 3, 4, 5};
+        int[] numbers4 = new int[]{5, 4, 3, 2, 1};
         // se crea una instancia de la clase InsertionSortExample
         InsertionSortExample insertion = new InsertionSortExample();
         // se imprimen los números ordenados
@@ -43,13 +46,13 @@ public class SecondPartialMain {
         // se crea una instancia de la clase BubbleSortExample
         BubbleSortExample bubble = new BubbleSortExample();
         // se imprimen los números ordenados
-        int [] array5 = bubble.sort(numbers);
+        int [] array5 = bubble.sort(numbers4);
         System.out.println("Peor caso");
         for (int i = 0; i < array5.length; i++) {
             System.out.print(array5[i] + " ");
         }
         System.out.println("\nMejor caso");
-        int [] array6 = bubble.sort(numbers2);
+        int [] array6 = bubble.sort(numbers3);
         for (int i = 0; i < array6.length; i++) {
             System.out.print(array6[i] + " ");
         }
