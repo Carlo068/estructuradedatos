@@ -4,15 +4,18 @@
 */
 
 package secondpartial;
+import java.util.Scanner;
 
 public class SecondPartialMain {
     public static void main(String[] args) {
         // se crean los arreglos de números
-        int[] numbers = new int[]{5, 4, 3, 2, 1};
+        int[] numbers = new int[]{10,9,8,7,6,5, 4, 3, 2, 1};
         int[] numbers2 = new int[]{1, 2, 3, 4, 5};
         // No se porque buguea por eso cree otra lista igual
         int[] numbers3 = new int[]{1, 2, 3, 4, 5};
         int[] numbers4 = new int[]{5, 4, 3, 2, 1};
+
+        int[] numbers5 = new int[]{10,9,8,7,6,5, 4, 3, 2, 1};
         // se crea una instancia de la clase InsertionSortExample
         InsertionSortExample insertion = new InsertionSortExample();
         // se imprimen los números ordenados
@@ -56,5 +59,15 @@ public class SecondPartialMain {
         for (int i = 0; i < array6.length; i++) {
             System.out.print(array6[i] + " ");
         }
+        Scanner objScanner = new Scanner(System.in);
+        System.out.print("ingresa el numero de busqueda: ");
+        int n = objScanner.nextInt();
+
+        SearchAlgorithm searchAlgorithm = new SearchAlgorithm();
+        int index = searchAlgorithm.search(numbers5, n);
+        System.out.println(index);
+
+        objScanner.close();
+
     }
 }
