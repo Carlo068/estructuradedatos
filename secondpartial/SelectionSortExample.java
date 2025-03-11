@@ -22,6 +22,7 @@ public class SelectionSortExample {
                 }
                 c++;
             }
+            // se intercambian los números
             int temp = numbers[minIndex];
             numbers[minIndex] = numbers[i];
             numbers[i] = temp;
