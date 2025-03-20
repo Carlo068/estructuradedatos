@@ -63,8 +63,8 @@ public class SecondPartialMain {
         System.out.print("ingresa el numero de busqueda: ");
         int n = objScanner.nextInt();
 
-        SearchAlgorithm searchAlgorithm = new SearchAlgorithm();
-        int index = searchAlgorithm.search(numbers5, n);
+        LinearSearch linear = new LinearSearch();
+        int index = linear.search(numbers5, n); 
         System.out.println(index);
 
         objScanner.close();
