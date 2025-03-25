@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class SecondPartialMain {
     public static void main(String[] args) {
         // se crean los arreglos de números
+        int[] datos = new int[]{10,15,20,25,30,35,40,45,50,55,60,65,70,75,80};
         int[] numbers = new int[]{10,9,8,7,6,5, 4, 3, 2, 1};
         int[] numbers2 = new int[]{1, 2, 3, 4, 5};
         // No se porque buguea por eso cree otra lista igual
@@ -67,7 +68,14 @@ public class SecondPartialMain {
         int index = linear.search(numbers5, n); 
         System.out.println(index);
 
-        objScanner.close();
+        IndexedSearch indexed = new IndexedSearch();
+        int index2 = indexed.search(datos, n);
+        System.out.println(index2);
 
+        BinarySearch binary = new BinarySearch();
+        int index3 = binary.search(numbers, n);
+        System.out.println(index3);
+
+        objScanner.close();
     }
 }

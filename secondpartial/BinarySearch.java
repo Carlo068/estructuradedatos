@@ -1,7 +1,7 @@
 package secondpartial;
 
 public class BinarySearch {
-    public static int search(int[] arr, int x) {
+    public int search(int[] arr, int x) {
         int left = 0;
         int right = arr.length - 1;
         while (left <= right) {

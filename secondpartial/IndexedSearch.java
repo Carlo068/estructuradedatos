@@ -1,7 +1,7 @@
 package secondpartial;
 
 public class IndexedSearch {
-    public static int search(int[] arr, int x) {
+    public int search(int[] arr, int x) {
         int n = arr.length;
         int step = (int) Math.floor(Math.sqrt(n));
         int prev = 0;
