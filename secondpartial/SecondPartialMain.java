@@ -16,6 +16,8 @@ public class SecondPartialMain {
         int[] numbers3 = new int[]{1, 2, 3, 4, 5};
         int[] numbers4 = new int[]{5, 4, 3, 2, 1};
 
+        int[] numbers7 = new int[]{4,2,6,1,3,5,7};
+
         int[] numbers5 = new int[]{10,9,8,7,6,5, 4, 3, 2, 1};
         // se crea una instancia de la clase InsertionSortExample
         InsertionSortExample insertion = new InsertionSortExample();
@@ -75,6 +77,12 @@ public class SecondPartialMain {
         BinarySearch binary = new BinarySearch();
         int index3 = binary.search(numbers, n);
         System.out.println(index3);
+
+        QuickSort quick = new QuickSort();
+        int [] array7 = quick.sort(numbers7);
+        for (int i = 0; i < array7.length; i++) {
+            System.out.print(array7[i] + " ");
+        }
 
         objScanner.close();
     }
