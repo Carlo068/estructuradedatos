@@ -17,5 +17,14 @@ public class ThirdPartialMain {
 
         System.out.println("After deleting 20:");
         list.display();
+
+        DoubleLinkedList doubleList = new DoubleLinkedList();
+        doubleList.addLast(10);
+        doubleList.addLast(20);
+        doubleList.addLast(30);
+        doubleList.addFirst(5);
+        doubleList.add(1, 15); // Add 15 at index 1
+        System.out.println("Double Linked List:");
+        doubleList.display(); // Assuming you have a display method in DoubleLinkedList
     }
 }
