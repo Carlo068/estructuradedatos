@@ -26,5 +26,7 @@ public class ThirdPartialMain {
         doubleList.add(1, 15); // Add 15 at index 1
         System.out.println("Double Linked List:");
         doubleList.display(); // Assuming you have a display method in DoubleLinkedList
+
+        EjemploPila.main(args); // Call the stack example
     }
 }
