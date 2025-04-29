@@ -28,5 +28,6 @@ public class ThirdPartialMain {
         doubleList.display(); // Assuming you have a display method in DoubleLinkedList
 
         EjemploPila.main(args); // Call the stack example
+        EjemploCola.main(args); // Call the queue example
     }
 }
