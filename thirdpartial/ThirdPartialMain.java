@@ -2,8 +2,8 @@ package thirdpartial;
 
 public class ThirdPartialMain {
     public static void main(String[] args) {
+        // SinglyLinkedList example
         SinglyLinkedList list = new SinglyLinkedList();
-
         list.insert(10);
         list.insert(20);
         list.insert(30);
@@ -18,6 +18,7 @@ public class ThirdPartialMain {
         System.out.println("After deleting 20:");
         list.display();
 
+        // DoubleLinkedList example
         DoubleLinkedList doubleList = new DoubleLinkedList();
         doubleList.addLast(10);
         doubleList.addLast(20);
@@ -27,7 +28,24 @@ public class ThirdPartialMain {
         System.out.println("Double Linked List:");
         doubleList.display(); // Assuming you have a display method in DoubleLinkedList
 
-        EjemploPila.main(args); // Call the stack example
-        EjemploCola.main(args); // Call the queue example
+        // Cola example
+        System.out.println("\nCola example:");
+        EjemploCola.add("Cliente 1");
+        EjemploCola.add("Cliente 2");
+        EjemploCola.add("Cliente 3");
+        EjemploCola.mostrarCola();
+        EjemploCola.frenteCola();
+        EjemploCola.eliminarCola();
+        EjemploCola.mostrarCola();
+
+        // Pila example
+        System.out.println("\nPila example:");
+        EjemploPila.push("Plato 1");
+        EjemploPila.push("Plato 2");
+        EjemploPila.push("Plato 3");
+        EjemploPila.mostrarPila();
+        EjemploPila.cimaPila();
+        EjemploPila.popPila();
+        EjemploPila.mostrarPila();
     }
 }
