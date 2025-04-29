@@ -10,17 +10,24 @@ public class EjemploCola {
         cola.add("Cliente 1");
         cola.add("Cliente 2");
         cola.add("Cliente 3");
-
-        // PEEK: Consultando quién está al frente de la cola sin eliminarlo
-        System.out.println("Cliente al frente: " + cola.peek());
-
-        // DEQUEUE: Atendiendo (eliminando) al primer cliente en la cola
-        System.out.println("Atendiendo a: " + cola.poll());
-
-        // DEQUEUE: Atendiendo (eliminando) al siguiente cliente en la cola
-        System.out.println("Atendiendo a: " + cola.poll());
-
-        // PEEK: Consultando quién está ahora al frente
-        System.out.println("Cliente al frente ahora: " + cola.peek());
     }
+    public static void mostrarCola(Queue<String> cola) {
+        System.out.println("Contenido de la cola:");
+        for (String cliente : cola) {
+            System.out.println(cliente);
+        }
+    }
+    public static void frenteCola(Queue<String> cola) {
+        if (!cola.isEmpty()) {
+            System.out.println("Elemento en el frente de la cola: " + cola.peek());
+        } else {
+            System.out.println("La cola está vacía.");
+        }
+    }
+    public static void eliminarCola(Queue<String> cola) {
+        if (!cola.isEmpty()) {
+            System.out.println("Elemento eliminado de la cola: " + cola.poll());
+        } else {
+            System.out.println("La cola está vacía.");
+        }
 }

@@ -10,14 +10,26 @@ public class EjemploPila {
         pila.push("Plato 2");
         pila.push("Plato 3");
 
-        // PEEK: Consultando el elemento en la cima
-        System.out.println("Elemento en la cima: " + pila.peek());
-
-        // POP: Eliminando elementos de la pila
-        System.out.println("Elemento removido: " + pila.pop());
-        System.out.println("Elemento removido: " + pila.pop());
-
-        // PEEK: Estado final de la pila
-        System.out.println("Elemento en la cima ahora: " + pila.peek());
     }
+    public static void mostrarPila(Stack<String> pila) {
+        System.out.println("Contenido de la pila:");
+        for (String plato : pila) {
+            System.out.println(plato);
+        }
+    }
+    public static void cimaPila(Stack<String> pila) {
+        if (!pila.isEmpty()) {
+            System.out.println("Elemento en la cima de la pila: " + pila.peek());
+        } else {
+            System.out.println("La pila está vacía.");
+        }
+    }
+    public static void popPila(Stack<String> pila) {
+        if (!pila.isEmpty()) {
+            System.out.println("Elemento eliminado de la pila: " + pila.pop());
+        } else {
+            System.out.println("La pila está vacía.");
+        }
+    }
+
 }
