@@ -45,7 +45,7 @@ public class ThirdPartialMain {
         EjemploPila.push("Plato 3");
         EjemploPila.mostrarPila();
         EjemploPila.cimaPila();
-        EjemploPila.popPila();
+        EjemploPila.pop();
         EjemploPila.mostrarPila();
     }
 }

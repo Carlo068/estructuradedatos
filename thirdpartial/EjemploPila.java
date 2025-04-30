@@ -28,7 +28,7 @@ public class EjemploPila {
         }
     }
     
-    public static void popPila() {
+    public static void pop() {
         if (!pila.isEmpty()) {
             System.out.println("Elemento eliminado de la pila: " + pila.pop());
         } else {
