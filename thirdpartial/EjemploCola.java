@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class EjemploCola {
-    private static Queue<String> cola = new LinkedList<>();
+    public static Queue<String> cola = new LinkedList<>();
     
     public static void add(String cliente) {
         cola.add(cliente);
