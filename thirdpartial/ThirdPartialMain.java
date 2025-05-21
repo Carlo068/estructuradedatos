@@ -25,7 +25,15 @@ public class ThirdPartialMain {
         doubleList.addFirst(5);
         doubleList.add(1, 15); // Add 15 at index 1
         System.out.println("Double Linked List:");
-        doubleList.display(); // Assuming you have a display method in DoubleLinkedList
+        doubleList.display();
+
+        // CircularLinkedList example
+        CircularLinkedList circularList = new CircularLinkedList();
+        circularList.add(10);
+        circularList.add(20);
+        circularList.add(30);
+        System.out.println("Circular Linked List:");
+        circularList.display();
 
         // Cola example
         System.out.println("\nCola example:");
