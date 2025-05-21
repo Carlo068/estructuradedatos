@@ -1,4 +1,3 @@
-package thirdpartial;
 
 public class ThirdPartialMain {
     public static void main(String[] args) {
@@ -45,7 +44,22 @@ public class ThirdPartialMain {
         EjemploPila.push("Plato 3");
         EjemploPila.mostrarPila();
         EjemploPila.cimaPila();
-        EjemploPila.pop();
+        EjemploPila.pop(); // Changed from pop() to popPila()
         EjemploPila.mostrarPila();
+        
+        // Arbol example
+        System.out.println("\nArbol example:");
+        EjemploArbolBinario arbol = new EjemploArbolBinario();
+        arbol.add(10);
+        arbol.add(5);
+        arbol.add(15);
+        arbol.add(3);
+        arbol.add(7);
+        arbol.add(12);
+        arbol.add(18);
+        System.out.println("Arbol Binario:");
+        arbol.displayInOrder();
+        arbol.displayPreOrder();
+        arbol.displayPostOrder();
     }
 }

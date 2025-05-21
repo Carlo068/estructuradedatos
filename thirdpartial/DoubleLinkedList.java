@@ -1,4 +1,3 @@
-package thirdpartial;
 
 public class DoubleLinkedList {
     // Node class for double linked list

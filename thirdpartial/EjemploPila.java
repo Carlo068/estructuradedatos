@@ -1,4 +1,3 @@
-package thirdpartial;
 import java.util.Stack;
 
 public class EjemploPila {

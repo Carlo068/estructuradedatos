@@ -1,4 +1,3 @@
-package thirdpartial;
 
 public class SinglyLinkedList {
 
