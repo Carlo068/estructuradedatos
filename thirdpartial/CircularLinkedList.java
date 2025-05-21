@@ -41,4 +41,7 @@ public class CircularLinkedList {
         } while (current != head);
         System.out.println();
     }
+    public int size() {
+        return size;
+    }
 }
