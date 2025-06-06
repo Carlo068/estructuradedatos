@@ -8,3 +8,9 @@ class Solution:
                 i += 1
         
         return i
+
+class Solution2:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        unique = sorted(set(nums))
+        nums[:len(unique)] = unique
+        return len(unique)

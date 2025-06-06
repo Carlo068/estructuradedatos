@@ -14,3 +14,12 @@ class Solution:
                 left = mid + 1
         
         return left
+
+from typing import List
+
+class Solution2:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for i in range(len(nums)):
+            if nums[i] >= target:
+                return i
+        return len(nums)

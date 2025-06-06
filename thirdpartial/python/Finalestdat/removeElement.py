@@ -10,11 +10,9 @@ class Solution:
                 k += 1
         
         return k 
-    
-# Example usage:
-solution = Solution()
-nums = [3, 2, 2, 3]
-val = 3
-result = solution.removeElement(nums, val)
-print("New length of the array:", result)
-print("Modified array:", nums[:result])
+
+class Solution2:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        while val in nums:
+            nums.remove(val)
+        return len(nums)
