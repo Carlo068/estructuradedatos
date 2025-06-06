@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         k = 0
@@ -8,3 +10,11 @@ class Solution:
                 k += 1
         
         return k 
+    
+# Example usage:
+solution = Solution()
+nums = [3, 2, 2, 3]
+val = 3
+result = solution.removeElement(nums, val)
+print("New length of the array:", result)
+print("Modified array:", nums[:result])
